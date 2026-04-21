@@ -1,73 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-hero: #010102;
-      --bg-panel: #0f1011;
-      --bg-card: rgba(255,255,255,0.02);
-      --text-main: #f7f8f8;
-      --text-sec: #d0d6e0;
-      --accent: #5e6ad2;
-      --border: rgba(255,255,255,0.08);
-    }
-    body {
-      background: var(--bg-hero);
-      color: var(--text-main);
-      font-family: 'Inter', system-ui, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 100px 20px;
-    }
-    h1 {
-      font-size: 72px;
-      font-weight: 510;
-      letter-spacing: -1.584px;
-      margin: 0;
-    }
-    p {
-      color: var(--text-sec);
-      font-size: 18px;
-      line-height: 1.6;
-      max-width: 600px;
-    }
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      padding: 24px;
-      border-radius: 8px;
-      margin-top: 40px;
-    }
-    .cta {
-      background: var(--accent);
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
-      font-weight: 510;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talha M. | Software & ML Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #010102;
+            --text-main: #f7f8f8;
+            --text-sec: #d0d6e0;
+            --accent: #5e6ad2;
+            --border: rgba(255,255,255,0.08);
+        }
+        body { background: var(--bg); color: var(--text-main); font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
+        .container { max-width: 800px; margin: 0 auto; padding: 80px 20px; }
+        h1 { font-size: 48px; font-weight: 510; letter-spacing: -1.056px; margin-bottom: 10px; }
+        .subhead { color: var(--accent); font-family: 'JetBrains Mono'; margin-bottom: 40px; }
+        .section { margin-top: 60px; }
+        h2 { font-size: 20px; font-weight: 590; margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+        .card { background: rgba(255,255,255,0.02); border: 1px solid var(--border); padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        p { color: var(--text-sec); line-height: 1.6; }
+        .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 20px; }
+        .skill { background: rgba(255,255,255,0.05); padding: 8px 12px; border-radius: 4px; font-size: 14px; text-align: center; }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Software Engineer.</h1>
-    <p>Building scalable systems and machine learning pipelines. Passionate about beautiful code, developer tooling, and open source.</p>
-    <a href="#" class="cta">Check my work</a>
-    
-    <div class="card">
-      <h2 style="font-size: 24px; margin-top:0;">Systems Architect</h2>
-      <p style="margin-bottom:0;">Experience in distributed systems, backend infrastructure, and high-performance APIs.</p>
+    <div class="container">
+        <h1>Talha M.</h1>
+        <div class="subhead">Software & Machine Learning Engineer</div>
+        
+        <p>Software Engineer with 5+ years building production-grade backend systems at scale. Currently applying intelligent systems, LLMs, and agent-based automation to real-world infrastructure problems.</p>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <div class="card">
+                <h3>Software Engineer @ Ulula</h3>
+                <p>Building high-performance survey engines and data pipelines for global supply chains. Integrating NLP pipelines and LLMs into production grievance workflows.</p>
+            </div>
+            <div class="card">
+                <h3>Software Developer @ PITB</h3>
+                <p>Modernized police infrastructure and internal communication systems using Laravel/Vue.js.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>AI & ML Projects</h2>
+            <div class="card">
+                <h3>AI Orchestrator</h3>
+                <p>Advanced machine learning orchestration framework.</p>
+            </div>
+            <div class="card">
+                <h3>Personal Agent</h3>
+                <p>All-in-one AI agent for multimodal content generation and coding assistance.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div class="skill">Laravel / PHP</div>
+                <div class="skill">Python / LangChain</div>
+                <div class="skill">LLM Orchestration</div>
+                <div class="skill">System Architecture</div>
+                <div class="skill">CI/CD Pipelines</div>
+                <div class="skill">Vue.js</div>
+            </div>
+        </div>
     </div>
-  </div>
 </body>
 </html>
