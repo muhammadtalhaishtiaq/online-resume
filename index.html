@@ -4,69 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talha M. | Software & ML Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg: #010102;
-            --text-main: #f7f8f8;
-            --text-sec: #d0d6e0;
-            --accent: #5e6ad2;
-            --border: rgba(255,255,255,0.08);
-        }
-        body { background: var(--bg); color: var(--text-main); font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
-        .container { max-width: 800px; margin: 0 auto; padding: 80px 20px; }
-        h1 { font-size: 48px; font-weight: 510; letter-spacing: -1.056px; margin-bottom: 10px; }
-        .subhead { color: var(--accent); font-family: 'JetBrains Mono'; margin-bottom: 40px; }
-        .section { margin-top: 60px; }
-        h2 { font-size: 20px; font-weight: 590; margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
-        .card { background: rgba(255,255,255,0.02); border: 1px solid var(--border); padding: 20px; border-radius: 8px; margin-bottom: 20px; }
-        p { color: var(--text-sec); line-height: 1.6; }
-        .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 20px; }
-        .skill { background: rgba(255,255,255,0.05); padding: 8px 12px; border-radius: 4px; font-size: 14px; text-align: center; }
+        :root { --bg: #fff; --text: #1d1d1f; --link: #0066cc; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 40px; max-width: 700px; }
+        nav { margin-bottom: 60px; display: flex; gap: 20px; }
+        nav a { color: var(--text); text-decoration: none; font-weight: 500; }
+        h1 { font-size: 32px; margin-bottom: 20px; }
+        .hero { font-size: 22px; margin-bottom: 40px; font-weight: 400; color: #444; }
+        .section { margin-bottom: 50px; }
+        h2 { font-size: 20px; margin-bottom: 20px; color: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 400; }
+        .work-item { margin-bottom: 30px; }
+        .work-item h3 { margin: 0 0 5px 0; font-size: 18px; }
+        .work-item p { margin: 0; color: #666; }
+        footer { margin-top: 100px; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Talha M.</h1>
-        <div class="subhead">Software & Machine Learning Engineer</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+    </nav>
+    <main>
+        <h1>Hello, I'm Talha.</h1>
+        <div class="hero">
+            I’m a Software & Machine Learning Engineer with 5+ years of experience building massive backend systems. My passion lies at the intersection of production-grade infrastructure and intelligent AI agent workflows.
+        </div>
         
-        <p>Software Engineer with 5+ years building production-grade backend systems at scale. Currently applying intelligent systems, LLMs, and agent-based automation to real-world infrastructure problems.</p>
-
-        <div class="section">
+        <div id="work" class="section">
             <h2>Experience</h2>
-            <div class="card">
-                <h3>Software Engineer @ Ulula</h3>
-                <p>Building high-performance survey engines and data pipelines for global supply chains. Integrating NLP pipelines and LLMs into production grievance workflows.</p>
+            <div class="work-item">
+                <h3>Senior Software Engineer at Ulula</h3>
+                <p>Architecting global supply chain monitoring platforms. Implementing NLP pipelines for grievance workflows.</p>
             </div>
-            <div class="card">
-                <h3>Software Developer @ PITB</h3>
-                <p>Modernized police infrastructure and internal communication systems using Laravel/Vue.js.</p>
+            <div class="work-item">
+                <h3>Software Developer at PITB</h3>
+                <p>Modernized critical government HR infrastructure and web services.</p>
             </div>
         </div>
 
-        <div class="section">
-            <h2>AI & ML Projects</h2>
-            <div class="card">
+        <div id="projects" class="section">
+            <h2>Selected Work</h2>
+            <div class="work-item">
                 <h3>AI Orchestrator</h3>
-                <p>Advanced machine learning orchestration framework.</p>
+                <p>A production-ready framework for managing complex ML model deployments.</p>
             </div>
-            <div class="card">
-                <h3>Personal Agent</h3>
-                <p>All-in-one AI agent for multimodal content generation and coding assistance.</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <div class="skills">
-                <div class="skill">Laravel / PHP</div>
-                <div class="skill">Python / LangChain</div>
-                <div class="skill">LLM Orchestration</div>
-                <div class="skill">System Architecture</div>
-                <div class="skill">CI/CD Pipelines</div>
-                <div class="skill">Vue.js</div>
+            <div class="work-item">
+                <h3>Personal AI Agent</h3>
+                <p>Automated multimodal workspace for content generation and technical tasks.</p>
             </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p>Let's build together: <a href="mailto:talhaishtiaq944@gmail.com">talhaishtiaq944@gmail.com</a></p>
+        <p><a href="https://github.com/muhammadtalhaishtiaq">GitHub</a> | <a href="https://linkedin.com/in/muhammadtalhaishtiaq">LinkedIn</a></p>
+    </footer>
 </body>
 </html>
