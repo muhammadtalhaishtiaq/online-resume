@@ -10,48 +10,58 @@
         nav { margin-bottom: 60px; display: flex; gap: 20px; }
         nav a { color: var(--text); text-decoration: none; font-weight: 500; }
         h1 { font-size: 32px; margin-bottom: 20px; }
-        .hero { font-size: 22px; margin-bottom: 40px; font-weight: 400; color: #444; }
+        .hero { font-size: 20px; margin-bottom: 40px; font-weight: 400; color: #444; }
         .section { margin-bottom: 50px; }
-        h2 { font-size: 20px; margin-bottom: 20px; color: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 400; }
-        .work-item { margin-bottom: 30px; }
-        .work-item h3 { margin: 0 0 5px 0; font-size: 18px; }
-        .work-item p { margin: 0; color: #666; }
+        h2 { font-size: 16px; margin-bottom: 20px; color: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+        .item { margin-bottom: 30px; }
+        .item h3 { margin: 0 0 5px 0; font-size: 18px; }
+        .item p { margin: 0; color: #555; }
+        .tags { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+        .tag { font-size: 12px; background: #f0f0f0; padding: 2px 8px; border-radius: 4px; color: #666; }
         footer { margin-top: 100px; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
     <nav>
-        <a href="#">Home</a>
-        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#work">Experience</a>
         <a href="#projects">Projects</a>
     </nav>
     <main>
-        <h1>Hello, I'm Talha.</h1>
+        <h1 id="about">Hello, I'm Talha.</h1>
         <div class="hero">
-            I’m a Software & Machine Learning Engineer with 5+ years of experience building massive backend systems. My passion lies at the intersection of production-grade infrastructure and intelligent AI agent workflows.
+            Software Engineer with 5+ years building production-grade backend systems at scale. Currently engineering intelligent systems, NLP pipelines, and agent-based automation workflows to solve real-world supply chain and infrastructure challenges.
         </div>
         
         <div id="work" class="section">
             <h2>Experience</h2>
-            <div class="work-item">
+            <div class="item">
                 <h3>Senior Software Engineer at Ulula</h3>
-                <p>Architecting global supply chain monitoring platforms. Implementing NLP pipelines for grievance workflows.</p>
+                <p>Leading the development of multi-channel survey & grievance platforms. Architecting modular survey engines, high-performance BI data pipelines (Domo), and scalable notification systems used by thousands of frontline workers.</p>
             </div>
-            <div class="work-item">
+            <div class="item">
                 <h3>Software Developer at PITB</h3>
-                <p>Modernized critical government HR infrastructure and web services.</p>
+                <p>Modernized critical Punjab Government HR systems and internal communications infrastructure. Successfully refactored legacy PHP codebases to modern Laravel standards, driving significant performance and security gains.</p>
             </div>
         </div>
 
         <div id="projects" class="section">
-            <h2>Selected Work</h2>
-            <div class="work-item">
-                <h3>AI Orchestrator</h3>
-                <p>A production-ready framework for managing complex ML model deployments.</p>
+            <h2>Featured Work & Projects</h2>
+            <div class="item">
+                <h3>Codesentinel</h3>
+                <p>Automated security analysis and static code guardrails for production environments.</p>
             </div>
-            <div class="work-item">
+            <div class="item">
+                <h3>Quizwhiz</h3>
+                <p>Dynamic assessment generation engine powered by modular logic.</p>
+            </div>
+            <div class="item">
+                <h3>AI Orchestrator</h3>
+                <p>Framework for managing complex ML model deployments and agent-based workflows.</p>
+            </div>
+            <div class="item">
                 <h3>Personal AI Agent</h3>
-                <p>Automated multimodal workspace for content generation and technical tasks.</p>
+                <p>Multimodal AI ecosystem integrating LLMs, image generation, and automated coding tasks.</p>
             </div>
         </div>
     </main>
